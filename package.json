@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass scss/main.scss css/style.css",
+    "start": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Mariusz Baran",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.12"
+  }
+}

@@ -1,0 +1,36 @@
+.about {
+  background: #9933ff;
+  color: #fff;
+
+  padding-top: 200px;
+  padding-bottom: 300px;
+  text-align: center;
+
+  .aboutbox {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .about__heading {
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 1.125;
+    margin-bottom: 1.5rem;
+  }
+
+  .about__description {
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1.5;
+    word-break: break-word;
+    color: #f3f3f3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    .aboutbox {
+      width: 100%;
+    }
+  }
+}
