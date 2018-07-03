@@ -1,0 +1,103 @@
+.contact {
+  background: #293347;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2), 0 0 0 1px #293347;
+  padding: 50px 20px;
+  text-align: center;
+  margin-bottom: -100px;
+
+  .contact__heading {
+    font-weight: 800;
+    font-size: 2em;
+    line-height: 1.125;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact__subheading {
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: #f3f3f3;
+  }
+
+  .contact__form {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-areas: "a b"
+                         "c c";
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    position: relative;
+    padding: 0 45px 100px 45px;
+    
+    .contact__form--name,
+    .contact__form--email,
+    .contact__form--message {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .contact__form--name {
+      grid-area: a;
+    }
+
+    .contact__form--email {
+      grid-area: b;
+    }
+
+    .contact__form--message {
+      grid-area: c;
+    }
+
+    .contact__form--submit {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      margin-bottom: 50px;
+
+      transition: background linear 0.15s;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 12px;
+      border: 2px solid #9933ff;
+      padding: 12px 30px;
+      font-weight: 500;
+      font-size: 1.25em;
+      background: transparent;
+    
+      &:hover {
+        background: #9933ff;
+        cursor: pointer;
+      }
+    }
+
+    input, textarea {
+      margin-top: 13px;
+      border: 0;
+      outline: 0;
+      font-size: 1.4rem;
+      padding: 7.4px 13px;
+      background: #35425b;
+
+      font-family: sans-serif;
+      color: #fff;
+      border-radius: 3px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact {
+    .contact__form {
+      grid-template-areas: "a"
+                           "b"
+                           "c";
+      padding: 0 10px 100px 10px;
+    }
+  }
+}
