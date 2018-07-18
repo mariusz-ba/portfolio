@@ -16,6 +16,17 @@
    box-sizing: border-box;
  }
 
+ .fade-in {
+   opacity: 0 !important;
+   transform: translate3d(0, -50px, 0);
+ }
+
+ section {
+   opacity: 1;
+   transform: translate3d(0, 0, 0);
+   transition: all linear 1s;
+ }
+
 body {
   font-family: $font-stack;
   color: #0a0a0a;

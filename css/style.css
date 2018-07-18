@@ -196,7 +196,7 @@ strong {
 
 @media screen and (max-width: 768px) {
   .technologies .technologies__box {
-    grid-template-areas: "frontend frontend" "backend backend"; }
+    grid-template-areas: "frontend frontend" "backend backend"; }
     .technologies .technologies__box .technologies__frontend {
       border-bottom: 1px solid #e6ecf8;
       border-right: 0; } }
@@ -330,7 +330,7 @@ strong {
   .contact .contact__form {
     margin-top: 40px;
     display: grid;
-    grid-template-areas: "a b" "c c";
+    grid-template-areas: "a b" "c c";
     grid-row-gap: 40px;
     grid-column-gap: 40px;
     position: relative;
@@ -378,7 +378,7 @@ strong {
 
 @media screen and (max-width: 1024px) {
   .contact .contact__form {
-    grid-template-areas: "a" "b" "c";
+    grid-template-areas: "a" "b" "c";
     padding: 0 10px 100px 10px; } }
 
 .footer {
@@ -426,6 +426,15 @@ strong {
 
 * {
   box-sizing: border-box; }
+
+.fade-in {
+  opacity: 0 !important;
+  transform: translate3d(0, -50px, 0); }
+
+section {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: all linear 1s; }
 
 body {
   font-family: sans-serif;

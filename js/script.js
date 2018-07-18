@@ -15,4 +15,17 @@
       })
     })
   })
+
+  // On scroll fade
+  const elements = document.querySelectorAll('.fade-in');
+  window.addEventListener('scroll', event => {
+    const offset = window.scrollY;
+    // If offset is greater than position of element + height of the screen
+    // remove fade-in class.
+    elements.forEach(element => {
+      if(offset + window.innerHeight >= element.offsetTop) {
+        element.classList.remove('fade-in');
+      }
+    })
+  })
 }())
