@@ -12,6 +12,10 @@
 @import 'layout/_footer';
 
 
+ * {
+   box-sizing: border-box;
+ }
+
 body {
   font-family: $font-stack;
   color: #0a0a0a;

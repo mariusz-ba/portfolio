@@ -11,14 +11,24 @@
     <!-- Header -->
     <header class="header">
       <div class="wrapper">
-        <h1 class="header__title">Junior Full-Stack Developer</h1>
-        <h3 class="header__subtitle">I design and code beautifully simple things, and I love what I do.</h3>
+        <nav class="navigation">
+          <ul>
+            <li><a data-js="menu-item" href="#about">About</a></li>
+            <li><a data-js="menu-item" href="#tech">Technologies</a></li>
+            <li><a data-js="menu-item" href="#portfolio">Portfolio</a></li>
+            <li><a data-js="menu-item" href="#contact-section">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h1 class="header__title">Junior Full-Stack Developer</h1>
+          <h3 class="header__subtitle">I design and code beautifully simple things, and I love what I do.</h3>
+        </div>
         <img class="header__image" src="img/me.jpg" alt="me"/>
       </div>
     </header>
 
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="wrapper">
         <div class="aboutbox">
           <h2 class="about__heading">Hi, I'm Mariusz. Nice to meet you.</h2>
@@ -28,7 +38,7 @@
     </section>
 
     <!-- Technologies -->
-    <section class="technologies">
+    <section class="technologies" id="tech">
       <div class="wrapper">
         <div class="technologies__box">
           <section class="technologies__frontend">
@@ -46,7 +56,7 @@
     </section>
 
     <!-- Projects -->
-    <section class="projects">
+    <section class="projects" id="portfolio">
       <div class="wrapper">
         <h2 class="projects__heading">My Recent Work</h2>
         <p class="projects__subheading">Here are a few recent projects. Want to see more? <a href="#">Email me</a></p>
@@ -132,5 +142,7 @@
       </ul>
       <p>Created by <strong>Mariusz Baran</strong> &copy; 2018</p>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
