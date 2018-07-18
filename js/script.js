@@ -1,7 +1,6 @@
 (function(){
   // Scrolling to anchor
-  const links = document.querySelectorAll('[data-js=menu-item]')
-  console.log(links);
+  const links = document.querySelectorAll('[data-js=menu-item]');
   links.forEach(link => {
     link.addEventListener('click', event => {
       event.preventDefault();
