@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Mariusz Baran | Web Developer</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="wrapper">
+        <nav class="navigation">
+          <ul>
+            <li><a data-js="menu-item" href="#about">About</a></li>
+            <li><a data-js="menu-item" href="#tech">Technologies</a></li>
+            <li><a data-js="menu-item" href="#portfolio">Portfolio</a></li>
+            <li><a data-js="menu-item" href="#contact-section">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h1 class="header__title">Junior Full-Stack Developer</h1>
+          <h3 class="header__subtitle">I design and code beautifully simple things, and I love what I do.</h3>
+        </div>
+        <img class="header__image" src="img/me.jpg" alt="me"/>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section class="about fade-in" id="about">
+      <div class="wrapper">
+        <div class="aboutbox">
+          <h2 class="about__heading">Hi, I'm Mariusz. Nice to meet you.</h2>
+          <p class="about__description">I'm a junior web developer and programmer living in Cracow, Poland. I make web applications, usually with JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies -->
+    <section class="technologies fade-in" id="tech">
+      <div class="wrapper">
+        <div class="technologies__box">
+          <section class="technologies__frontend">
+            <img src="img/frontend.png" alt="Frontend"/>
+            <h3 class="technologies__heading">Front-end</h3>
+            <p class="technologies__description">I primarily use <strong>JavaScript</strong>, but picking up a new framework or language isn't a problem. I have extensive programming experience and I'm comfortable developing on the frontend or backend as well as setting up or managing infrastructure.</p>
+          </section>
+          <section class="technologies__backend">
+            <img src="img/backend.png" alt="Backend"/>
+            <h3 class="technologies__heading">Back-end</h3>
+            <p class="technologies__description">My bread and butter is <strong>NodeJS</strong> and its associated stack: Express, MongoDB. I am comfortable using NodeJS for all sorts of projects; full CMS websites, database-driven web applications, REST-driven frontend applications.</p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects fade-in" id="portfolio">
+      <div class="wrapper">
+        <h2 class="projects__heading">My Recent Work</h2>
+        <p class="projects__subheading">Here are a few recent projects. Want to see more? <a href="#">Email me</a></p>
+        <div class="projects__grid">
+          <figure class="projects__item">
+            <h3 class="projects__title">Blogger</h3>
+            <img src="img/blogger.png" alt="Project"/>
+            <figcaption>
+              <div class="projects__captionbox">
+                <p>Create your own blog</p>
+                <a href="https://github.com/mariusz-ba/blogger">Visit Github ></a>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="projects__item">
+            <h3 class="projects__title">Calculator</h3>
+            <img src="img/calculator.png" alt="Project"/>
+            <figcaption>
+              <div class="projects__captionbox">
+                <p>JavaScript calculator powered by React.</p>
+                <a href="https://github.com/mariusz-ba/calculator">Visit Github ></a>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="projects__item">
+            <h3 class="projects__title">Todos</h3>
+            <img src="img/todos.png" alt="Project"/>
+            <figcaption>
+              <div class="projects__captionbox">
+                <p>Simple todo application written using React and Express.</p>
+                <a href="https://github.com/mariusz-ba/todos">Visit Github ></a>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="projects__item">
+            <h3 class="projects__title">Tasker</h3>
+            <img src="img/tasker.png" alt="Project"/>
+            <figcaption>
+              <div class="projects__captionbox">
+                <p>Task managing service for teams.</p>
+                <a href="https://github.com/mariusz-ba/tasker">Visit Github ></a>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="projects__item">
+            <h3 class="projects__title">SQLiteEditor</h3>
+            <img src="img/sqliteeditor.png" alt="Project"/>
+            <figcaption>
+              <div class="projects__captionbox">
+                <p>App that provides basic operations on SQLite database.</p>
+                <a href="https://github.com/mariusz-ba/sqliteeditor">Visit Github ></a>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <a href="https://github.com/mariusz-ba" class="projects__more"><i class="fab fa-github"></i> See more on Github</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact-section" class="fade-in" style="position: relative;">
+      <div class="wrapper">
+        <div class="contact">
+          <h3 class="contact__heading">Interested in working together?</h3>
+          <h4 class="contact__subheading">Let's get started!</h4>
+          <form class="contact__form">
+            <label class="contact__form--name">Name<input type="text" name="name" /></label>
+            <label class="contact__form--email">Email<input type="email" name="email" /></label>
+            <label class="contact__form--message">Message<textarea rows="5" type="text" name="name"></textarea></label>
+            <button class="contact__form--submit" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <h4 class="footer__title">Creative thinking inspires ideas.<br/> Ideas inspire change.</h4>
+      <ul class="footer__socials">
+        <li class="footer__social"><a href="#"><i class="fab fa-github"></i></a></li>
+        <li class="footer__social"><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li class="footer__social"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+      <p>Created by <strong>Mariusz Baran</strong> &copy; 2018</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
